@@ -1,0 +1,81 @@
+<html>
+  <head>
+  <h2>Javascript data types</h2>
+</head>
+<body>
+  <h2>Number data type</h2>
+<p>Numbers can be written with, or without decimal:</p>
+<script>
+    // Creating variables
+    var a = 25;
+    var b = 80.5;
+    var c = 4.25e+6;
+    var d = 4.25e-6;
+    
+    // Printing variable values
+    document.write(a + "<br>");
+    document.write(b + "<br>");
+    document.write(c + "<br>");
+    document.write(d);
+    </script>
+<h2>String data type</h2>
+<p>Strings are written with quotes. You can use single or double quotes:</p>
+<script>
+    // Creating variables
+    var a = 'Hi there Welcome to letsupgrade!';  // using single quotes
+    var b = "Hi there Welcome to letsupgrade!";  // using double quotes
+    
+    // Printing variable values
+    document.write(a + "<br>");
+    document.write(b);
+    </script>
+    <h2>boolean data type </h2>
+    <p>The Boolean data type can hold only two values: true or false. It is typically used to store values like yes (true) or no (false), on (true) or off (false), etc.</p>
+<script>
+    // Creating variables
+    var isReading = true;   // yes, I'm reading
+    var isSleeping = false; // no, I'm not sleeping
+    
+    // Printing variable values
+    document.write(isReading + "<br>");
+    document.write(isSleeping);
+    </script>
+    <h2>null data type</h2>
+    <p>This is another special data type that can have only one value-the null value. A null value means that there is no value. It is not equivalent to an empty string ("") or 0, it is simply nothing.A variable can be explicitly emptied of its current contents by assigning it the null value.</p>
+<script>
+    var a = null;
+    document.write(a + "<br>"); // Print: null
+    
+    var b = "Hello World!"
+    document.write(b + "<br>"); // Print: Hello World!
+    
+    b = null;
+    document.write(b) // Print: null
+    </script>
+    <h2>Array data type</h2>
+    <p>An array is a type of object used for storing multiple values in single variable. Each value (also called an element) in an array has a numeric position, known as its index, and it may contain data of any data type-numbers, strings, booleans, functions, objects, and even other arrays. The array index starts from 0, so that the first array element is arr[0] not arr[1].</p>
+<script>
+    // Creating arrays
+    var colors = ["Red", "Yellow", "Green", "Orange"];
+    var cities = ["London", "Paris", "New York"];
+    
+    // Printing array values
+    document.write(colors[0] + "<br>");   // Output: Red
+    document.write(cities[2]);   // Output: New York
+    </script>
+    <h2>Function data type</h2>
+    <p>The function is callable object that executes a block of code. Since functions are objects, so it is possible to assign them to variables</p>
+ <script>
+    var greeting = function(){ 
+        return "Hello World!"; 
+    }
+     
+    // Check the type of greeting variable
+    document.write(typeof greeting) // Output: function
+    document.write("<br>");
+    document.write(greeting());     // Output: Hello World!
+    </script>
+</body>
+</html>
+
+
